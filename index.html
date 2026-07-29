@@ -560,8 +560,8 @@ footer{background:#0a0814;padding:40px 0;text-align:center;border-top:1px solid 
 <body>
 
 <div class="sticky-messengers" id="stickyMessengers">
-<a data-msg-url="https://wa.me/79675802551" class="btn btn-wa" target="_blank" rel="noopener" data-wa="true">📲 Чат в WhatsApp</a>
-<a data-msg-url="https://t.me/anna_more_magic" class="btn btn-tg" target="_blank" rel="noopener" data-telegram="true">✈ Написать в Telegram</a>
+<a href="https://wa.me/79675802551" class="btn btn-wa" target="_blank" rel="noopener" data-wa="true">📲 Чат в WhatsApp</a>
+<a href="https://t.me/anna_more_magic" class="btn btn-tg" target="_blank" rel="noopener" data-telegram="true">✈ Написать в Telegram</a>
 </div>
 
 <section class="hero">
@@ -579,8 +579,8 @@ footer{background:#0a0814;padding:40px 0;text-align:center;border-top:1px solid 
 <div class="trust-item"><span style="font-size:1.5rem">📱</span><span style="font-size:0.85rem;font-weight:600">Быстрая связь и фото отчёты</span></div>
         </div>
         <div class="hero-cta">
-        <a data-msg-url="https://wa.me/79675802551" class="btn btn-wa" target="_blank" rel="noopener" data-wa="true">📲 Написать в WhatsApp</a>
-        <a data-msg-url="https://t.me/anna_more_magic" class="btn btn-tg" target="_blank" rel="noopener" data-telegram="true">✈ Связаться в Telegram</a>
+        <a href="https://wa.me/79675802551" class="btn btn-wa" target="_blank" rel="noopener" data-wa="true">📲 Написать в WhatsApp</a>
+        <a href="https://t.me/anna_more_magic" class="btn btn-tg" target="_blank" rel="noopener" data-telegram="true">✈ Связаться в Telegram</a>
         </div>
         </div>
         <div>
@@ -1152,7 +1152,7 @@ function initMessengerIntent(){
     const tgButtons = Array.from(document.querySelectorAll('[data-messenger="tg"],[data-telegram],.btn-tg'));
     const attachIntentHandlers = (buttons, type, targetUrl) => {
         buttons.forEach(btn => {
-            if (btn.tagName === 'A') {
+            if (false && btn.tagName === 'A') {
                 btn.removeAttribute('href');
                 btn.removeAttribute('target');
                 btn.removeAttribute('rel');
